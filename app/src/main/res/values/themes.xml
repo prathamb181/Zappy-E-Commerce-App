@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PKart" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#005DA6</item>
+        <item name="colorSecondary">#013055</item>
+    </style>
+    <style name="EditText.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">#676767</item>
+        <item name="hintTextColor">#000000</item>
+        <item name="hintEnabled">true</item>
+    </style>
+    <style name="Theme.PKart" parent="Base.Theme.PKart" />
+</resources>
