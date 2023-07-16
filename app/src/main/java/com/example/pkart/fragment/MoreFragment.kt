@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pkart.R
 import com.example.pkart.activity.AddressActivity
+import com.example.pkart.activity.LoginActivity
 import com.example.pkart.activity.MyInfoActivity
 import com.example.pkart.activity.MyOrdersActivity
 import com.example.pkart.adapter.AllOrderAdapter
@@ -39,6 +40,10 @@ class MoreFragment : Fragment() {
             startActivity(intent)
         }
 
+        binding.btnLogout.setOnClickListener {
+            val intent = Intent(context, LoginActivity::class.java)
+            startActivity(intent)
+        }
         return binding.root
     }
 }

@@ -29,19 +29,19 @@ class CheckoutActivity : AppCompatActivity(), PaymentResultListener {
         setContentView(binding.root)
 
         val checkout = Checkout()
-        checkout.setKeyID("rzp_test_YMpRNrRlG6VDeZ")
+        checkout.setKeyID("YOUR API KEY")
 
         val price = intent.getStringExtra("totalCost")
 
         try {
             val options = JSONObject()
-            options.put("name", "PKART")
+            options.put("name", "ZAPPY")
             options.put("description", "Best Ecommerce App")
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.png")
             options.put("theme.color", "#005DA6")
             options.put("currency", "INR")
             options.put("amount", (price!!.toInt() * 100)) //pass amount in currency subunits
-            options.put("prefill.email", "prathamb181@gmail.com")
+            options.put("prefill.email", "")
             options.put("prefill.contact", "+919876543210")
             checkout.open(this, options)
         } catch (e: Exception) {
